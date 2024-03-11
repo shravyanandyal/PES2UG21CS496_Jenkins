@@ -3,7 +3,7 @@ pipeline {
     stages {
         // stage('Clone repository') {
         //     steps {
-        //         checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/Jatinsharma159/Jenkins.git']]])
+        //         checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/shravyanandyal/Jenkins.git']]])
         //     }
         // }
         stage('Build') {
@@ -17,7 +17,7 @@ pipeline {
                 // Assuming you have test steps here. Adjust accordingly.
                 sh './output'
             }
-        //}
+        }
         stage('Deploy') {
             steps {
                 echo 'deploy'
