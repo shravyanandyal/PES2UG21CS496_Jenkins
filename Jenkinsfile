@@ -17,7 +17,7 @@ pipeline {
                 // Assuming you have test steps here. Adjust accordingly.
                 sh './output'
             }
-        }
+        //}
         stage('Deploy') {
             steps {
                 echo 'deploy'
